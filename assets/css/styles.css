@@ -1,3 +1,5 @@
+/* General Layout */
+
 body {
 	font-family: 'Muli', sans-serif;
 	margin:0;
@@ -6,6 +8,18 @@ body {
 div {
 	display: block;
 }
+
+.container {
+	width:100%;
+	padding: 0;
+	margin: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Paragraph Styles */
 
 .text-medium p {
 	font-size: 18px;
@@ -35,11 +49,7 @@ div {
 	margin: .3em .1em .1em 0;
 }
 
-.container {
-	width:100%;
-	padding: 0;
-	margin: 0;
-}
+/* Fade In */
 
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -61,6 +71,20 @@ div {
     animation-duration:1s;
 }
 
+/* Heading Styles */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ovo', serif;
+}
+
+.black h1 {
+	color: #FFFFFF;
+}
+
+.dark h1 {
+	color: #ECECEC;
+}
+
 .black {
 	background-color: #000000;
 	line-height: 3em;
@@ -75,21 +99,11 @@ div {
 	text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Ovo', serif;
-}
-
-.black h1 {
-	color: #FFFFFF;
-}
-
-.dark h1 {
-	color: #ECECEC;
-}
-
 .exclude {
 	font-family: sans-serif;
 }
+
+/* Link Styles */
 
 a {
 	color: #545454;
@@ -130,4 +144,33 @@ a.custom-link:hover, a.custom-link:focus {
   a.custom-link:hover, a.custom-link:focus {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, #000000 2px, #000000 2.5px, rgba(0, 0, 0, 0) 2.5px);
   }
+}
+
+/* Image Styles */
+
+.image-container {
+	margin: 0 5px;
+	border: 1px solid;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float: right;
+}
+
+.image-container img {
+	display:block;
+}
+
+.image-container .image-credit {
+	margin: 0 0 0 2px;
+	font-size: 10px;
+}
+
+.image-description-container {
+	display: block;
+	width: auto;
 }
