@@ -41,6 +41,19 @@ div {
 	margin: 0;
 }
 
+.animated {
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@keyframes .fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1}
+
+}
+
 .black {
 	background-color: #000000;
 	line-height: 3em;
