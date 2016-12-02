@@ -131,11 +131,11 @@ h1, h2, h3, h4, h5, h6 {
 .card-square-testimage > .mdl-card__title {
   color: #D6D2C4;
   background:
-    url('https://upload.wikimedia.org/wikipedia/commons/a/af/Jimi_Hendrix_1967_uncropped.jpg') center right 15% no-repeat #46B6AC;
+    url('images/hendrix.jpg') center right 15% no-repeat #46B6AC;
 }
 
 .card-wide-testimage > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('https://c2.staticflickr.com/8/7610/16800139540_36cf1bde89_b.jpg') center / cover;
+  background: url('images/colosseo.jpg') center / cover;
 }
