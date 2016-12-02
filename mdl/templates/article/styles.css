@@ -14,8 +14,12 @@
  * limitations under the License.
  */
 
-body {
-  font-family: 'Merriweather Sans', sans-serif;
+body, .content p {
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,4 +80,62 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer .mdl-mini-footer--link-list a {
   font-size: 13px;
+}
+
+/* Image Card Sizes */
+
+/* Squares */
+.card-square-500.mdl-card {
+  width: 500px;
+  height: 500px;
+}
+
+.card-square-400.mdl-card {
+  width: 400px;
+  height: 400px;
+}
+
+.card-square-300.mdl-card {
+  width: 300px;
+  height: 300px;
+}
+
+/* Wide */
+
+.card-wide-512.mdl-card {
+  width: 512px;
+}
+
+.card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+/* Image Cards */
+
+.card-left {
+  float: left;
+  margin-right: 15px;
+}
+
+.card-right {
+  float: right;
+  margin-left: 15px;
+}
+
+.card-square-500demo > .mdl-card__title {
+  color: #fff;
+  background:
+    url('http://placehold.it/500x400') bottom right 15% no-repeat #46B6AC;
+}
+
+.card-square-testimage > .mdl-card__title {
+  color: #D6D2C4;
+  background:
+    url('https://upload.wikimedia.org/wikipedia/commons/a/af/Jimi_Hendrix_1967_uncropped.jpg') center right 15% no-repeat #46B6AC;
+}
+
+.card-wide-testimage > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('https://c2.staticflickr.com/8/7610/16800139540_36cf1bde89_b.jpg') center / cover;
 }
