@@ -15,8 +15,8 @@
  */
 
 body, .content p {
-  font-family: 'Tahoma', 'Merriweather Sans', sans-serif;
-  /* font-family: 'Merriweather Sans', sans-serif; */
+  /* font-family: 'Tahoma', 'Merriweather Sans', sans-serif; */
+  font-family: 'Merriweather Sans', sans-serif;
   /* font-family: 'Oswald', sans-serif; */
   font-weight: 300;
   font-size: 1.1em;
@@ -37,7 +37,7 @@ h2 {
 }
 
 .emphasis {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .ribbon {
