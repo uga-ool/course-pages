@@ -15,9 +15,10 @@
  */
 
 body, .content p {
+  font-family: 'Tahoma', 'Merriweather Sans', sans-serif;
   /* font-family: 'Merriweather Sans', sans-serif; */
-  font-family: 'Oswald', sans-serif;
-  font-weight: lighter;
+  /* font-family: 'Oswald', sans-serif; */
+  font-weight: 300;
   font-size: 1.1em;
   line-height: 1.5em;
 }
@@ -52,6 +53,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
+.header .mdl-layout-title {
+    max-width: 375px;
+    line-height: 1.3em;
+    font-size: 14px;
+  }
+
 .container {
   max-width: 1600px;
   width: calc(100% - 16px);
@@ -76,13 +83,26 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 40px;
   background-color: #554F47;
   color: #e9e7e5;
+  min-height: 200px;
+}
+
+.footer .mdl-logo {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+
+}
+
+.course-title {
+  display:block;
+  max-width: 400px
 }
 
 .footer .mdl-mini-footer--link-list a {
   font-size: 13px;
 }
 
-.logo {
+.logo-header {
   display: none;
 }
 
@@ -147,41 +167,125 @@ h1, h2, h3, h4, h5, h6 {
 /* Media Queries */
 
 @media (min-width: 800px) {
-  .logo {
+  .logo-header {
     display:block;
     position: absolute;
-    right: 30px;
+    right: 70px;
+  }
+
+  .logo-footer {
+    display:block;
+    position: absolute;
+    right: 125px;
+  }
+
+  .course-title {
+    position: absolute;
+    left:130px;
+  }
+
+  .header .mdl-layout-title {
+    margin-left: 130px;
+    max-width: 400px;
+    line-height: 1.5em;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1025px) {
-  .logo {
+  .logo-header {
     display:block;
     position: absolute;
     right: 150px;
   }
+
+  .logo-footer {
+    display:block;
+    position: absolute;
+    right: 200px;
+  }
+
+  .course-title {
+    position: absolute;
+    left:250px;
+  }
+
+  .header .mdl-layout-title {
+    margin-left: 160px;
+    max-width: 500px;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1500px) {
-  .logo {
+  .logo-header {
     display:block;
     position: absolute;
     right: 300px;
   }
+
+  .logo-footer {
+    display:block;
+    position: absolute;
+    right: 300px;
+  }
+
+  .course-title {
+    position: absolute;
+    left:375px;
+  }
+  
+  .header .mdl-layout-title {
+    margin-left: 250px;
+    max-width: 600px;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1900px) {
-  .logo {
+  .logo-header {
     display:block;
     position: absolute;
     right: 500px;
   }
+
+  .logo-footer {
+    display:block;
+    position: absolute;
+    right: 500px;
+  }
+
+  .course-title {
+    position: absolute;
+    left:550px;
+  }
+  
+  .header .mdl-layout-title {
+    margin-left: 475px;
+    max-width: 600px;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 2200px) {
-  .logo {
+  .logo-header {
     display:block;
     position: absolute;
     right: 700px;
+  }
+
+  .logo-footer {
+    display:block;
+    position: absolute;
+    right: 700px;
+  }
+
+  .course-title {
+    position: absolute;
+    left:725px;
+  }
+  
+  .header .mdl-layout-title {
+    margin-left: 575px;
   }
 }
