@@ -27,6 +27,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
 }
 
+h2 {
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+.mdl-button.mdl-button--colored {
+    color: #BA0C2F;
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
 .ribbon {
   width: 100%;
   height: 40vh;
@@ -56,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 .header .mdl-layout-title {
     max-width: 375px;
     line-height: 1.3em;
-    font-size: 14px;
+    font-size: 16px;
   }
 
 .container {
@@ -110,40 +123,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Squares */
 .card-square-500.mdl-card {
-  width: 500px;
+  width: 250px;
   height: 500px;
+  margin-bottom: 20px;
 }
 
 .card-square-400.mdl-card {
-  width: 400px;
+  width: 250px;
   height: 400px;
+  margin-bottom: 20px;
 }
 
 .card-square-300.mdl-card {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 400px;
+  margin-bottom: 20px;
 }
 
 /* Wide */
 
 .card-wide-512.mdl-card {
-  width: 512px;
+  width: 250px;
+  margin-bottom: 20px;
 }
 
 .card-wide > .mdl-card__menu {
   color: #fff;
-}
-
-/* Image Cards */
-
-.card-left {
-  float: left;
-  margin-right: 15px;
-}
-
-.card-right {
-  float: right;
-  margin-left: 15px;
 }
 
 .card-square-500demo > .mdl-card__title {
@@ -164,9 +169,50 @@ h1, h2, h3, h4, h5, h6 {
   background: url('images/colosseo.jpg') center / cover;
 }
 
+/* MUSI2040E Demo Images */
+.card-square-greatlakes > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('images/musi2040edemo/1_greatlakes.jpg') center / cover;
+}
+
+.card-square-lakemichigan > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('images/musi2040edemo/2_lakemichigan.jpg') center / cover;
+}
+
+.card-wide-pecos > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('images/musi2040edemo/3_pecos.jpg') center / cover;
+}
+
+.card-square-pawnee > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('images/musi2040edemo/4_pawnee.png') center / cover;
+}
+
 /* Media Queries */
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
+  .card-left {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .card-right {
+    float: right;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 920px) {
+  h2 {
+    font-size: 2.2em;
+  }
+
   .logo-header {
     display:block;
     position: absolute;
@@ -188,11 +234,50 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 130px;
     max-width: 400px;
     line-height: 1.5em;
-    font-size: 14px;
+    font-size: 20px;
+  }
+
+  /* Image Card Sizes */
+
+  /* Squares */
+  .card-square-500.mdl-card {
+    width: 500px;
+    height: 500px;
+  }
+
+  .card-square-400.mdl-card {
+    width: 400px;
+    height: 400px;
+  }
+
+  .card-square-300.mdl-card {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Wide */
+
+  .card-wide-512.mdl-card {
+    width: 512px;
+  }
+
+  .card-left {
+    float: none;
+    margin-right: 0px;
+  }
+
+  .card-right {
+    float: none;
+    margin-left: 0px;
   }
 }
 
 @media (min-width: 1025px) {
+
+  h2 {
+    font-size: 2.6em;
+    line-height: 1.3em;
+  }
   .logo-header {
     display:block;
     position: absolute;
@@ -213,7 +298,29 @@ h1, h2, h3, h4, h5, h6 {
   .header .mdl-layout-title {
     margin-left: 160px;
     max-width: 500px;
-    font-size: 16px;
+    font-size: 22px;
+  }
+
+  .card-left {
+  float: none;
+  margin-right: 15px;
+  }
+
+  .card-right {
+    float: none;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-left {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .card-right {
+    float: right;
+    margin-left: 15px;
   }
 }
 
@@ -238,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
   .header .mdl-layout-title {
     margin-left: 250px;
     max-width: 600px;
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
