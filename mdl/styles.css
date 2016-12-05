@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 
+.logo {
+  display: none;
+}
+
 /* Image Card Sizes */
 
 /* Squares */
@@ -138,4 +142,46 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   height: 176px;
   background: url('images/colosseo.jpg') center / cover;
+}
+
+/* Media Queries */
+
+@media (min-width: 800px) {
+  .logo {
+    display:block;
+    position: absolute;
+    right: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .logo {
+    display:block;
+    position: absolute;
+    right: 150px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .logo {
+    display:block;
+    position: absolute;
+    right: 300px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .logo {
+    display:block;
+    position: absolute;
+    right: 500px;
+  }
+}
+
+@media (min-width: 2200px) {
+  .logo {
+    display:block;
+    position: absolute;
+    right: 700px;
+  }
 }
