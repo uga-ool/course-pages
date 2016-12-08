@@ -70,6 +70,12 @@ h2 {
     font-size: 16px;
   }
 
+.logo-header {
+ background: url('../images/logo-50h.jpg') center right no-repeat;
+ width: 143px;
+ height: 50px;
+}
+
 .container {
   max-width: 1600px;
   width: calc(100% - 16px);
@@ -102,6 +108,12 @@ h2 {
   font-size: 1.5em;
   line-height: 1.5em;
 
+}
+
+.logo-footer {
+  background: url('../images/logo-white-trans-100.png') center right no-repeat;
+  width: 287px;
+  height: 100px;
 }
 
 .course-title {

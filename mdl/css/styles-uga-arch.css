@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 body, .content p {
   font-family: 'Merriweather Sans', 'Tahoma', sans-serif;
   font-weight: 300;
@@ -32,7 +31,7 @@ h2 {
 }
 
 .mdl-button.mdl-button--colored {
-    color: #BA0C2F;
+    color: #66435A;
 }
 
 .emphasis {
@@ -42,14 +41,14 @@ h2 {
 .ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #BA0C2F;
+  background-color: #000000;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
 
 .main {
-  margin-top: -40vh;
+  margin-top: -35vh;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -70,6 +69,12 @@ h2 {
     line-height: 1.3em;
     font-size: 16px;
   }
+
+.logo-header {
+ background: url('../images/logo-50h.jpg') center right no-repeat;
+ width: 143px;
+ height: 50px;
+}
 
 .container {
   max-width: 1600px;
@@ -93,8 +98,7 @@ h2 {
 
 .footer {
   padding-left: 40px;
-  background-color: #554F47;
-  color: #e9e7e5;
+  background-color: #FFCD00;
   min-height: 200px;
 }
 
@@ -102,12 +106,19 @@ h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.5em;
   line-height: 1.5em;
+  color: #000000;
 
+}
+
+.logo-footer {
+  background: url('../images/logo-white-trans-100.png') center right no-repeat;
+  width: 287px;
+  height: 100px;
 }
 
 .course-title {
   display:block;
-  max-width: 400px;
+  max-width: 400px
 }
 
 .footer .mdl-mini-footer--link-list a {
@@ -207,7 +218,7 @@ h2 {
   }
 
   .header .mdl-layout-title {
-    margin-left: 0px;
+    margin-left: 130px;
     max-width: 400px;
     line-height: 1.5em;
     font-size: 20px;
@@ -238,13 +249,13 @@ h2 {
   }
 
   .card-left {
-    float: left;
-    margin-right: 20px;
+    float: none;
+    margin-right: 0px;
   }
 
   .card-right {
-    float: right;
-    margin-left: 20px;
+    float: none;
+    margin-left: 0px;
   }
 }
 
@@ -279,13 +290,13 @@ h2 {
   }
 
   .card-left {
-    float: left;
-    margin-right: 20px;
+  float: none;
+  margin-right: 15px;
   }
 
   .card-right {
-    float: right;
-    margin-left: 20px;
+    float: none;
+    margin-left: 15px;
   }
 }
 
