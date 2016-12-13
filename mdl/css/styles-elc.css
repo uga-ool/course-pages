@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+
 body, .content p {
   font-family: 'Merriweather Sans', 'Tahoma', sans-serif;
   font-weight: 300;
@@ -41,14 +42,14 @@ h2 {
 .ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #D6D2C4;
+  background-color: #BA0C2F;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
 
 .main {
-  margin-top: -35vh;
+  margin-top: -40vh;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -60,8 +61,8 @@ h2 {
 
 .header .mdl-layout__header-row {
   padding-left: 40px;
-  background-color: #E4002B;
-  color: #ffffff;
+  background-color: #D6D2C4;
+  color: #000000;
 }
 
 .header .mdl-layout-title {
@@ -69,12 +70,6 @@ h2 {
     line-height: 1.3em;
     font-size: 16px;
   }
-
-.logo-header {
- background: url('../images/logo-white-50h.png') center right no-repeat;
- width: 183px;
- height: 50px;
-}
 
 .container {
   max-width: 1600px;
@@ -98,7 +93,7 @@ h2 {
 
 .footer {
   padding-left: 40px;
-  background-color: #000000;
+  background-color: #554F47;
   color: #e9e7e5;
   min-height: 200px;
 }
@@ -110,15 +105,9 @@ h2 {
 
 }
 
-.logo-footer {
-  background: url('../images/footer-logo-white-100.png') center right no-repeat;
-  width: 287px;
-  height: 100px;
-}
-
 .course-title {
   display:block;
-  max-width: 400px
+  max-width: 400px;
 }
 
 .footer .mdl-mini-footer--link-list a {
@@ -218,7 +207,7 @@ h2 {
   }
 
   .header .mdl-layout-title {
-    margin-left: 130px;
+    margin-left: 0px;
     max-width: 400px;
     line-height: 1.5em;
     font-size: 20px;
@@ -249,13 +238,13 @@ h2 {
   }
 
   .card-left {
-    float: none;
-    margin-right: 0px;
+    float: left;
+    margin-right: 20px;
   }
 
   .card-right {
-    float: none;
-    margin-left: 0px;
+    float: right;
+    margin-left: 20px;
   }
 }
 
@@ -290,13 +279,13 @@ h2 {
   }
 
   .card-left {
-  float: none;
-  margin-right: 15px;
+    float: left;
+    margin-right: 20px;
   }
 
   .card-right {
-    float: none;
-    margin-left: 15px;
+    float: right;
+    margin-left: 20px;
   }
 }
 

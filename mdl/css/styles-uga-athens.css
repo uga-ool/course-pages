@@ -71,8 +71,8 @@ h2 {
   }
 
 .logo-header {
- background: url('../images/logo-50h.jpg') center right no-repeat;
- width: 143px;
+ background: url('../images/logo-color-50h.png') center right no-repeat;
+ width: 284px;
  height: 50px;
 }
 
@@ -106,12 +106,12 @@ h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.5em;
   line-height: 1.5em;
-  color: #9EA2A2;
+  color: #ffffff;
 
 }
 
 .logo-footer {
-  background: url('../images/logo-white-trans-100.png') center right no-repeat;
+  background: url('../images/footer-logo-white-100.png') center right no-repeat;
   width: 287px;
   height: 100px;
 }
