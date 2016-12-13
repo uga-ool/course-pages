@@ -1,0 +1,28 @@
+.mdl-button.mdl-button--colored {
+    color: #BA0C2F;
+}
+
+.ribbon {
+  background-color: #004E60;
+}
+
+.header .mdl-layout__header-row {
+  background-color: #D6D2C4;
+  color: #000000;
+}
+
+.logo-header {
+ background: url('../images/logo-color-50h.png') center right no-repeat;
+}
+
+.footer {
+  background-color: #594A25;
+}
+
+.footer .mdl-logo {
+  color: #ffffff;
+}
+
+.logo-footer {
+  background: url('../images/footer-logo-white-100.png') center right no-repeat;
+}
