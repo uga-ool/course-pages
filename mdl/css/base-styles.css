@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-body, .content p, ul {
+body, .content p, ul, ol {
   font-family: 'Merriweather Sans', 'Tahoma', sans-serif;
   font-weight: 300;
   font-size: 1.1em;
