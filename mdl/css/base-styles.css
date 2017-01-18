@@ -122,6 +122,10 @@ h2 {
 
 /* Image Card Sizes */
 
+.mdl-card img {
+  margin-left: -16px;
+}
+
 /* Squares */
 .card-square-500.mdl-card {
   width: 250px;
