@@ -161,7 +161,7 @@ h2 {
 /* Media Queries */
 
 @media (min-width: 600px) {
-  .card-wide-512.mdl-card {
+  .card-wide-512.mdl-card, .card-wide-800.mdl-card {
     width: 412px;
   }
   
@@ -219,6 +219,10 @@ h2 {
 
   .card-wide-512.mdl-card {
     width: 512px;
+  }
+
+  .card-wide-800.mdl-card {
+    width: 450px;
   }
 
   /* Image Card Alignment */
