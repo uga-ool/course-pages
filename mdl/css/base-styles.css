@@ -17,7 +17,7 @@
 body, .content p, ul, ol {
   font-family: 'Merriweather Sans', 'Tahoma', sans-serif;
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -26,8 +26,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 2em;
-  line-height: 1.4em;
+  font-size: 1.8em;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h3.subtitle {
+  font-size: 1.4em;
+  margin-top: -20px;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: .8em;
 }
 
 .emphasis {
@@ -120,6 +141,109 @@ h2 {
   display: none;
 }
 
+.heavy {
+      font-weight: 400;
+}
+ul.plain, ol.plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.full-table {
+  font-size: 14px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.half-table {
+  font-size: 14px;
+  table-layout:fixed;
+  width: 50%
+}
+
+th {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+td {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+/* Centers the text in centered tables */
+.center td {
+  text-align: center;
+}
+
+.table-column-50 {
+  width: 50px;
+}
+
+.table-column-75 {
+  width: 75px;
+}
+
+.table-column-100 {
+  width: 100px;
+}
+
+.table-column-125 {
+  width: 125px;
+}
+
+.table-column-150 {
+  width: 150px;
+}
+
+.table-column-200 {
+  width: 200px;
+}
+
+.table-column-250 {
+  width: 250px;
+}
+
+.table-column-400 {
+  width: 400px;
+}
+
+.table-column-500 {
+  width: 500px;
+}
+
+.table-row-grey {
+  background-color: #f4f4f4;
+}
+
+.table-cell-center {
+  text-align: center;
+}
+table ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+table ul ul {
+  margin: 0 0 0 25px;
+  list-style: circle;
+}
+
+table + p {
+  margin-top: 15px;
+}
+
 /* Image Card Sizes */
 
 .mdl-card img {
@@ -164,12 +288,25 @@ h2 {
   .card-wide-512.mdl-card, .card-wide-800.mdl-card {
     width: 412px;
   }
+
+  .content {
+    min-width: 580px;
+  }
+  
+}
+
+@media (min-width: 760px) {
+
+  .content {
+    min-width: 740px;
+  }
   
 }
 
 @media (min-width: 920px) {
-  h2 {
-    font-size: 2.2em;
+
+  .content {
+    min-width: 898px;
   }
 
   .logo-header {
@@ -243,6 +380,9 @@ h2 {
 }
 
 @media (min-width: 1025px) {
+  .content {
+    min-width: 1015px;
+  }
 
   h2 {
     font-size: 2.6em;
@@ -276,12 +416,20 @@ h2 {
 }
 
 @media (min-width: 1200px) {
+  .content {
+    min-width: 1180px;
+  }
+
   .card-wide-800.mdl-card {
     width: 700px;
   }
 }
 
 @media (min-width: 1500px) {
+  .content {
+    min-width: 1480px;
+  }
+
   .logo-header {
     right: 300px;
   }
@@ -311,6 +459,10 @@ h2 {
 }
 
 @media (min-width: 1900px) {
+  .content {
+    min-width: 1600px;
+  }
+
   .logo-header {
     right: 500px;
   }
