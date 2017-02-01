@@ -11,6 +11,7 @@
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300" rel="stylesheet">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/base-styles.css">
     <link rel="stylesheet" href="css/uga-bulldog.css">
@@ -60,12 +61,16 @@
             <h3>Special heading classes</h3>
             <p>There is a special h3 class for subtitles that adds a negative margin to the top of the heading to move it closer to the main title. To use it, add a class of "subtitle" to your h3, like so:</p>
 
-            <p>&lt;h3 class="subtitle"&gt;Subtitle Goes Here&lt;/h3&gt;<p>
+            <div class="code">
+            <p>&lt;h3 class="subtitle"&gt;Subtitle Goes Here&lt;/h3&gt;</p>
+            </div>
 
             <p>This can be combined with the text-center class to produce a centered page title and subtitle:</p>
 
+            <div class="code">
             <p>&lt;h2 class="text-center"&gt;Page Title&lt;/h2&gt;<br>
             &lt;h3 class="subtitle text-center"&gt;Page Subtitle&lt;/h3&gt;</p>
+            </div>
 
             <p>Which will produce:</p>
 
@@ -75,12 +80,16 @@
             <h2>Lists</h2>
             <p>In order to produce an unordered list or ordered list with no bullet points/numbers and with no extra margin or padding, apply a class of "plain" to your &lt;ul&gt; or &lt;ol&gt;. For example:</p>
 
+            <div class="code">
+
             <p>&lt;ul class="plain"&gt;<br>
             &nbsp;&nbsp;&lt;li&gt;List Item 1&lt;/li&gt;<br>
             &nbsp;&nbsp;&lt;li&gt;List Item 2&lt;/li&gt;<br>
             &nbsp;&nbsp;&lt;li&gt;List Item 3&lt;/li&gt;<br>
             &nbsp;&nbsp;&lt;li&gt;List Item 4&lt;/li&gt;<br>
             &lt;/ul&gt;</p>
+
+            </div>
 
             <p>Will produce:<br>
             <ul class="plain">
@@ -92,6 +101,8 @@
             <hr>
             <h2>Tables</h2>
             <p>Properly formatted HTML tables will take the following form:</p>
+
+            <div class="code">
             <p>&lt;table&gt;<br>
             &nbsp;&nbsp;&lt;tr&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Table Header&lt;/th&gt;<br>
@@ -110,6 +121,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table Data&lt;/td&gt;<br>
             &nbsp;&nbsp;&lt;/tr&gt;<br>
             &lt;/table&gt;</p>
+            </div>
 
             <p>Which will render:<br>
             <table>
@@ -161,8 +173,9 @@
 
             <h3>Table Example</h3>
 
-            <p>Here is an example of a table using some of the options described above.<br>
-            &lt;table class="half-table center"&gt;<br>
+            <p>Here is an example of a table using some of the options described above.</p>
+            <div class="code">
+            <p>&lt;table class="half-table center"&gt;<br>
             &nbsp;&nbsp;&lt;tr&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="table-column-75"&gt;Table Header&lt;/th&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;th class="table-column-150"&gt;Table Header&lt;/th&gt;<br>
@@ -180,6 +193,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table Data&lt;/td&gt;<br>
             &nbsp;&nbsp;&lt;/tr&gt;<br>
             &lt;/table&gt;</p>
+            </div>
 
             <p>Which will produce:</p>
             <table class="half-table center">
@@ -246,8 +260,9 @@
               <li>card-center</li>
             </ul></p>
 
-            <p>Here is example code for a left-aligned, 500 by 500 image area<br>
-            &lt;div class="card-left card-square-500 mdl-card mdl-shadow--2dp"&gt;<br>
+            <p>Here is example code for a left-aligned, 500 by 500 image area</p>
+            <div class="code">
+            <p>&lt;div class="card-left card-square-500 mdl-card mdl-shadow--2dp"&gt;<br>
             &nbsp;&nbsp;&lt;div class="mdl-card__title mdl-card--expand"&gt;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image Source URL Goes Here"&gt;<br>
             &nbsp;&nbsp;&lt;/div&gt;<br>
@@ -262,6 +277,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
             &nbsp;&nbsp;&lt;/div&gt;<br>
             &lt;/div&gt;</p>
+            </div>
 
             <p>Which will render:</p>  
             <div class="card-left card-square-500 mdl-card mdl-shadow--2dp">

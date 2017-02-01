@@ -1,2 +1,12 @@
 /* Styles specific to the OOL Course Content Style Guide, Found at: 
 https://uga-ool.github.io/course-pages/mdl/uga-ool-style-guide.html */
+
+.code {
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+.code p {
+    font-family: 'Source Code Pro', monospace;
+}
