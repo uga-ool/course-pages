@@ -278,7 +278,7 @@ table + p {
 
 @media (min-width: 600px) {
   .card-wide-512.mdl-card, .card-wide-800.mdl-card {
-    width: 412px;
+    width: 800px;
   }
 
   .content {
