@@ -26,3 +26,23 @@
 .logo-footer {
   background: url('../../img/footer-logo-white-100.png') center right no-repeat;
 }
+
+/* unvisited link */
+a:link {
+    color: #E4002B;
+}
+
+/* visited link */
+a:visited {
+    color: #E4002B;
+}
+
+/* mouse over link */
+a:hover {
+    color: #9ea2a2;
+}
+
+/* selected link */
+a:active {
+    color: #E4002B;
+}
