@@ -317,7 +317,7 @@
             <div class="clear-both"></div>
             <hr>
             <h2>Videos</h2>
-            <p>Videos can be placed in card containers similar to images. Videos placed in these cards should be embedded at 540px wide. To maintain a 16:9 aspect ratio, your embed needs to be 304px tall. When embedding into the LSM, you can use the following embed code, replacing each value that contains the "XXXXXXXX" placeholder:</p>
+            <p>Videos can be placed in card containers similar to images. Videos embedded using the LMS embed codes have a dimension of 585w X 420h, which appears to be unchangeable. When embedding into the LMS, you can use the following embed code, replacing each value that contains the "XXXXXXXX" placeholder:</p>
             <div class="code">
                <p>
                 &lt;iframe&gt;id="VideoCaptureIframe" src="/d2l/im/kaltura/MediaPlayer.d2l?ou={OrgUnitId}&amp;entryId=XXXXXXXX&amp;title=XXXXXXXXXX<br>
@@ -356,9 +356,9 @@
           <div class="code">
             <p>
               &lt;div class="video-card video-left"&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe&gt; id="VideoCaptureIframe" src="/d2l/im/kaltura/MediaPlayer.d2l?ou={OrgUnitId}&amp;entryId=XXXXXXXX&amp;title=XXXXXXXXXX&amp;description=&amp;mediaType=1" <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="540" height="304" scrolling="no" frameborder="0" title="XXXXXXXX" allowfullscreen="true" <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webkitallowfullscreen="true" mozallowfullscreen="true">Kaltura Video Player&lt;/iframe&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe id="VideoCaptureIframe" src="/d2l/im/kaltura/MediaPlayer.d2l?ou={OrgUnitId}&amp;entryId=XXXXXXXX&amp;title=XXXXXXXXXX&amp;description=&amp;mediaType=1" <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="585" height="420" scrolling="no" frameborder="0" title="XXXXXXXX" allowfullscreen="true" <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webkitallowfullscreen="true" mozallowfullscreen="true"&gt;Kaltura Video Player&lt;/iframe&gt;<br>
               &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="video-title"&gt;Video Title&lt;/span&gt;<br>
               &nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
               &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="video-description"&gt;Video description.&lt;/span&gt;<br>
@@ -368,7 +368,7 @@
 
           <p>Which will render as:</p>
           <div class="video-card video-left">
-              <img src="http://placehold.it/540x304">
+              <img src="http://placehold.it/585x420">
               <span class="video-title">Video Title</span>
               <hr>
               <span class="video-description">Video description.</span>
