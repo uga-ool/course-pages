@@ -314,6 +314,66 @@
               </a>
             </div>
             </div>
+            <div class="clear-both"></div>
+            <hr>
+            <h2>Videos</h2>
+            <p>Videos can be placed in card containers similar to images. Videos placed in these cards should be embedded at 540px wide. To maintain a 16:9 aspect ratio, your embed needs to be 304px tall. When embedding into the LSM, you can use the following embed code, replacing each value that contains the "XXXXXXXX" placeholder:</p>
+            <div class="code">
+               <p>
+                &lt;iframe&gt;id="VideoCaptureIframe" src="/d2l/im/kaltura/MediaPlayer.d2l?ou={OrgUnitId}&amp;entryId=XXXXXXXX&amp;title=XXXXXXXXXX<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&amp;description=&amp;mediaType=1" width="540" height="304" scrolling="no" frameborder="0" title="XXXXXXXX" <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">Kaltura Video Player&lt;/iframe&gt;
+               </p>
+             </div>
+
+             <p>In order to place a video inside a card, you must wrap the iframe in a div with the class "video-card". There are a few optional styles to customize the card, detailed in the table below:
+             <table>
+             <tr>
+                <th class="table-column-100">Div Class</th>
+                <th class="table-column-200">Effect on video card</th>
+              </tr>
+              <tr>
+                <td>video-card</td>
+                <td>Creates video card element</td>
+              </tr>
+              <tr class="table-row-grey">
+                <td>video-left</td>
+                <td>Floats video card to the left, causes text to wrap around the right side of the video player. Takes effect at 920w</td>
+              </tr>
+              <tr>
+                <td>video-right</td>
+                <td>Floats video card to the right, causes text to wrap around the left side of the video player. Takes effect at 920w</td>
+              </tr>
+              <tr class="table-row-grey">
+                <td>video-dark</td>
+                <td>Changes the card color to dark gray &amp; lightens the text color</td>
+              </tr>
+            </table>
+          </p>
+
+          <p>In order to add the title, horizontal rule, and description to the video card, you should add a span with class "video-title", a horizontal rule element, and a span with class "video description" after the iframe inside the "video-card" div. The full video card HTML will look like this:</p>
+
+          <div class="code">
+            <p>
+              &lt;div class="video-card video-left"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe&gt; id="VideoCaptureIframe" src="/d2l/im/kaltura/MediaPlayer.d2l?ou={OrgUnitId}&amp;entryId=XXXXXXXX&amp;title=XXXXXXXXXX&amp;description=&amp;mediaType=1" <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="540" height="304" scrolling="no" frameborder="0" title="XXXXXXXX" allowfullscreen="true" <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webkitallowfullscreen="true" mozallowfullscreen="true">Kaltura Video Player&lt;/iframe&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="video-title"&gt;Video Title&lt;/span&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="video-description"&gt;Video description.&lt;/span&gt;<br>
+              &lt;/div&gt;
+            </p>
+          </div>
+
+          <p>Which will render as:</p>
+          <div class="video-card video-left">
+              <img src="http://placehold.it/540x304">
+              <span class="video-title">Video Title</span>
+              <hr>
+              <span class="video-description">Video description.</span>
+          </div>
+
           </div>
         </div>
         <footer class="footer mdl-mini-footer">

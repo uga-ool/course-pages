@@ -345,8 +345,11 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
 /* Media Queries */
 
 @media (min-width: 600px) {
-  .card-wide-512.mdl-card, .card-wide-800.mdl-card {
-    width: 800px;
+  .card-wide-512.mdl-card {
+    width: 512px;
+  }
+  .card-wide-800.mdl-card {
+    width: 512px;
   }
 
   .content {
@@ -425,7 +428,7 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
   }
 
   .card-wide-800.mdl-card {
-    width: 450px;
+    width: 800px;
   }
 
   /* Image Card Alignment */
@@ -485,19 +488,11 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
     margin-left: 60px;
     max-width: 500px;
   }
-
-  .card-wide-800.mdl-card {
-    width: 550px;
-  }
 }
 
 @media (min-width: 1200px) {
   .content {
     min-width: 1180px;
-  }
-
-  .card-wide-800.mdl-card {
-    width: 700px;
   }
 }
 
@@ -526,10 +521,6 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
   .header .mdl-layout-title {
     margin-left: 90px;
     max-width: 600px;
-  }
-
-  .card-wide-800.mdl-card {
-    width: 800px;
   }
 }
 
