@@ -244,6 +244,27 @@ table + p {
   margin-top: 15px;
 }
 
+/* Options for table borders */
+
+.table-hborders {
+        border-collapse: collapse;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+}
+
+.table-hborders tr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.table-borders, .table-borders td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 2px;
+}
 /* Image Card Sizes */
 
 .mdl-card img {
@@ -450,7 +471,8 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
     margin: 0 auto;
     margin-bottom: 15px;
   }
-
+  
+  /* Video Alignment */
   .video-left {
     float: left;
     margin-right: 20px;
@@ -459,6 +481,17 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
   .video-right {
     float: right;
     margin-left: 20px;
+  }
+
+  /* General Alignment */
+  .float-left {
+    float: left;
+    margin: 0 10px;
+  }
+
+  .float-right {
+    float: right;
+    margin: 0 10px;
   }
 
 }
