@@ -21,10 +21,16 @@ body, .content p, ul, ol {
   line-height: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: 'Merriweather', serif;
   margin: 5px 0;
   line-height: 2em;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', 'Tahoma', sans-serif;
+  margin: 5px 0;
+  line-height: 2em; 
 }
 
 h1 {
@@ -53,6 +59,10 @@ h5 {
 
 h6 {
   font-size: 1em;
+}
+
+blockquote {
+  font-size: 18px;
 }
 
 .heavy {
@@ -287,6 +297,13 @@ th {
 .card-square-300.mdl-card {
   width: 250px;
   height: 400px;
+  margin-bottom: 20px;
+}
+
+/* Rectangles */
+.card-rectangle-400.mdl-card {
+  width: 400px;
+  height: 500px;
   margin-bottom: 20px;
 }
 
