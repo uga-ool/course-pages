@@ -20,18 +20,26 @@
   .header .mdl-layout-title {
     margin-left: 0px;
   }
+
+  .container {
+    min-width: 1000px;
+  }
 }
 
 @media (min-width: 1025px) {
 
   .card-left {
-    float: none;
+    float: left;
     margin-right: 20px;
   }
 
   .card-right {
-    float: none;
+    float: right;
     margin-left: 20px;
+  }
+
+  .container {
+    min-width: 1155px;
   }
 }
 

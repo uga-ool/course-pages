@@ -321,7 +321,7 @@ th {
 }
 
 /* Video Embeds */
-.video-card {
+.video-card, .video-card-wide {
   display: inline-block;
   margin: 30px auto;
   min-height: 500px;
@@ -342,6 +342,13 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
 .video-title, .video-description {
   display: block;
   max-width: 400px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.video-card-wide .video-title, .video-card-wide .video-description {
+  display: block;
+  max-width: 900px;
   text-align: left;
   margin-left: 10px;
 }
@@ -373,6 +380,11 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
 
 .video-card iframe {
   margin-left: -27px;
+  margin-top: -17px;
+}
+
+.video-card-wide iframe {
+  margin-left: 0px;
   margin-top: -17px;
 }
 
@@ -534,9 +546,7 @@ box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); *
   }
 
   .course-title {
-    position: absolute;
-    left:250px;
-    max-width: 300px
+    max-width: 450px
   }
 
   .header .mdl-layout-title {

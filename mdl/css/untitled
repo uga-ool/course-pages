@@ -1,0 +1,41 @@
+<h1>Meet Your Instructor</h1>
+<p>
+<script>// <![CDATA[
+function createNode(element) {
+  return document.createElement(element); // Create the type of element you pass in the parameters
+}
+
+function append(parent, el) {
+  return parent.appendChild(el); // Append the second parameter(element) to the first one
+}
+
+const ouId = "{OrgUnitId}"
+const url = '/d2l/api/lp/1.12/' + ouId + '/classlist/'; // Trying to get the classlist
+
+fetch(url, {credentials: 'same-origin' })
+  .then((resp) => resp.json()) // Transform the data into json
+  .then(function(data) {
+    console.log(data)
+    /*
+    let members = data.Items; // Get the results
+    return members.map(function(member) { // Map through the results and for each run the code below
+    let roleId = member.Role.Id
+    let li = createNode('li'), //  Create the elements we need
+        span = createNode('span');
+        span.innerHTML = `${member.User.DisplayName} ${member.User.EmailAddress}`; // Make the HTML of our span to be the display name and email of the class member
+    append(li, span);
+
+    if (roleId == 194) {
+      append(sysUl, li);
+      }
+    if (roleId == 471){      
+      append(collabUl, li);
+      }
+    })
+    */
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+// ]]></script>
+</p>
