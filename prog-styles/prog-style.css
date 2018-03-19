@@ -1,0 +1,126 @@
+body {
+    background-color: #FBF9F9;
+    background-color:hsl(0, 20%, 98%);
+    color: #FFFFFF;
+    margin: 0;
+}
+
+body p, body h1, body h2, body h3, body h4, body h5, body h6 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    line-height: 1.4em;
+    margin-bottom: -15px;
+    color: hsl(0, 0%, 16%);
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.7em;
+}
+
+h2 {
+    font-size: 2.3em;
+}
+
+h3 {
+    font-size: 2.1em;
+}
+
+h4 {
+    font-size: 1.9em;
+}
+
+h5 {
+    font-size: 1.7em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    color: hsl(0, 20%, 20%);
+}
+
+.header {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
+
+@media (min-width: 900px) {
+
+    .header {
+        width: 100%;
+        background-color: #BB0C2F;
+        background-color: hsla(348, 88%, 39%, 1);
+        text-align: left;
+        padding-top: 5px;
+        display:block;
+    }
+
+    .header span {
+        color: hsla(0, 0%, 100%, 0.85);
+        margin: 0 15px 0 15px;
+    }
+
+    .header img {
+        float: right;
+        position: relative;
+        top: -105px;
+        left: -30px;
+    }
+
+    .smaller {
+        font-size: 1.5em;
+    }
+
+    .bigger {
+        font-size: 3em;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: #554F47;
+        background-color: hsla(34, 9%, 31%, 1);
+        min-height: 400px;
+        position: relative;
+        display: block;
+    }
+
+    .online-logo {
+        width: 45%;
+        min-height: 350px;
+        display: inline-block;
+    }
+
+    .ssw-logo {
+        width: 45%;
+        min-height: 350px;
+        display: inline-block;
+    }
+
+    .online-logo img {
+        position: absolute;
+        right: 55%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .ssw-logo img {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(150%, -50%);
+    }
+
+}
